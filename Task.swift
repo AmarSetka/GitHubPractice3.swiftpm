@@ -5,7 +5,7 @@
 //  Created by Haasini Kala R. Police on 9/16/24.
 //
 
-import Foundation
+import SwiftUI
 
 struct Task: Hashable {
      var nameOfTask: String
