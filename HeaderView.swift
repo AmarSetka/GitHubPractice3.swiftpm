@@ -13,6 +13,8 @@ struct HeaderView : View {
     var body : some View{
         HStack{
             TextField("Add to array", text: $Storage)
+                .textFieldStyle(.roundedBorder)
+                .padding()
             Button(action: {
                 tasks.nameOfTask
                     .append(Storage)

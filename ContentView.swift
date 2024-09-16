@@ -8,11 +8,6 @@ struct ContentView: View {
             Array in
             Text(Array.nameOfTask)
         }
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+        .frame(width: 300, height: 300, alignment: .top)
     }
 }
