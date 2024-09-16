@@ -8,9 +8,6 @@
 import Foundation
 
 struct Task: Hashable {
-    @State var nameOfTask: String
-    var body: some View {
-        
-        
-    }
+     var nameOfTask: String
+  
 }
