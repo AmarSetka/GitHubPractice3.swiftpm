@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeaderView : View {
-    @Binding var tasks : Task
+    @Binding var tasks : [Task]
     @State var Storage : String = ""
     var body : some View{
         HStack{
@@ -16,8 +16,7 @@ struct HeaderView : View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
             Button(action: {
-                tasks.nameOfTask
-                    .append(Storage)
+                    tasks.append(Task(nameOfTask: Storage))
             }, label: {
                 Text("Add to array")
             })
